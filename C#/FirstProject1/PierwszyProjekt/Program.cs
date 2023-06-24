@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using MojeEnumy;//bo ten bo nowy namespace w osobnym folderze to trzeba zaimpoortowac ladnie
 
@@ -346,16 +347,29 @@ namespace PierwszyProjekt
             #endregion
             #region JakisZydek musi tutaj ten urodzinki no
             DateTime Teraz = DateTime.Now;//Data obecna
-            int rok, miesiac, dzien;
-            Console.Write("rok w ktorym sie urodziles: ");
-            rok = int.Parse(Console.ReadLine());
-            Console.Write("miesiac w ktorym sie urodziles: ");
-            miesiac = int.Parse(Console.ReadLine());
-            Console.Write("dzien w ktorym sie urodziles: ");
-            dzien = int.Parse(Console.ReadLine());
-            DateTime Urodzinki = new DateTime(rok, miesiac, dzien);//przypisanie jakies daty
+
+            Console.Write("Podaj date urodzin (DD.MM.YYYY): ");
+            string DateOutput = Console.ReadLine();
+            DateTime Urodzinki = DateTime.Parse(DateOutput);
+
             TimeSpan timeSpan = Teraz - Urodzinki;
-            Console.WriteLine($"tyle dni temu sie urodziles {timeSpan.TotalDays}"); 
+            Console.WriteLine($"tyle dni temu sie urodziles {timeSpan.TotalDays}");
+            #endregion
+            #region Regex
+            //Regexr.com
+            /*
+            ^Dzień wszystko co zaczyna sie na dzien
+            dobry$ wszystko co konczy sie na dobry
+            ^dzien dobry$ wszystko co zaczyna i konczy sie na dzien dobry
+            dobry kazde dobry w tekscie
+            */
+            Regex regex = new Regex(@"^([a-z0-9]+)\.?([a-z0-9]+)@([a-z]+)\.[a-z]{2,3}$");
+            string mail = "test.test@gmail.com";
+            bool  IsMatch = regex.IsMatch(mail);
+            Console.WriteLine(IsMatch);
+            #endregion
+            #region Nauka O Klasach
+
             #endregion
         }
     }
