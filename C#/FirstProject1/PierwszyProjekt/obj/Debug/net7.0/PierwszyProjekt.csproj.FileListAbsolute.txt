@@ -1,0 +1,15 @@
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\PierwszyProjekt.exe
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\PierwszyProjekt.deps.json
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\PierwszyProjekt.runtimeconfig.json
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\PierwszyProjekt.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\PierwszyProjekt.pdb
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.csproj.AssemblyReference.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.AssemblyInfoInputs.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.AssemblyInfo.cs
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.csproj.CoreCompileInputs.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\refint\PierwszyProjekt.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.pdb
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.genruntimeconfig.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\ref\PierwszyProjekt.dll
