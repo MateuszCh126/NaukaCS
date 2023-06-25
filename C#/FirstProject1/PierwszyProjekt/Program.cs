@@ -395,6 +395,9 @@ namespace PierwszyProjekt
             test.publicprop = "hejka";
             #endregion
             #region Klasy Abstrakcyjne
+            //File.cs
+            #endregion
+            #region Klasy Interfejs
 
             #endregion
         }

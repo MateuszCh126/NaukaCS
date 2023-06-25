@@ -9,7 +9,10 @@ namespace PierwszyProjekt
     internal class WordFile: File//oznacza to ze dziedziczy zmienne z klasy file
     {
 
-
+        public override void Compress()//za pomoca override implementujemy metode abstrakcyjna z pliku file ktora jest wymagana
+        {
+            Console.WriteLine("Compressing");
+        }
         public void Print()
         {
             Console.WriteLine($"Printing: {FileName}");
