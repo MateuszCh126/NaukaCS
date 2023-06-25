@@ -4,6 +4,21 @@
     "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\PierwszyProjekt\\PierwszyProjekt.csproj": {}
   },
   "projects": {
+    "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\ClassLibrary\\ClassLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\ClassLibrary\\ClassLibrary.csproj",
+        "projectName": "ClassLibrary",
+        "projectPath": "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\ClassLibrary\\ClassLibrary.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\PierwszyProjekt\\PierwszyProjekt.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +47,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\gamin\\OneDrive\\Pulpit\\Programowanie\\C#\\FirstProject1\\ClassLibrary\\ClassLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

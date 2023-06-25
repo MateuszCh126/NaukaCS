@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using MojeEnumy;//bo ten bo nowy namespace w osobnym folderze to trzeba zaimpoortowac ladnie
+using ClassLibrary;//importuje klase z innego projektu wazne zeby dodac inny projekt do zaleznosci
 
 namespace PierwszyProjekt
 {
@@ -369,6 +370,31 @@ namespace PierwszyProjekt
             Console.WriteLine(IsMatch);
             #endregion
             #region Nauka O Klasach
+            Person Aleksander = new Person("Aleksander", "Szlosek");
+            Aleksander.SetDateOfBirth(new DateTime(2005,01,04));
+            Aleksander.ContactNumber = "780094046";
+            Aleksander.SayHi();
+            Person Jacek = new Person(new DateTime(2005, 03, 01), "Jacek", "Keliwar");
+            Jacek.SayHi();
+            #endregion
+            #region Dziedziczenie Klasy
+            //ogolnie to pliki ktore zawieraja File w nazwie
+            WordFile wordFile = new WordFile();
+            wordFile.CreatedOn = DateTime.Now;
+            wordFile.FileName = "Word-File";
+            wordFile.FileSize = 100;
+            wordFile.Print();
+
+            ExcelFile excelFile = new ExcelFile();
+            excelFile.FileName = "Excel-File";
+            excelFile.FileSize = 100;
+            excelFile.CreatedOn = DateTime.Now;
+            excelFile.GenerateRaport();
+            
+            Class1 test = new Class1();//patrz prokelt ClassLibrary 
+            test.publicprop = "hejka";
+            #endregion
+            #region Klasy Abstrakcyjne
 
             #endregion
         }
