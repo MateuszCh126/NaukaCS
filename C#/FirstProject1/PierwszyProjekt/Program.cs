@@ -252,7 +252,7 @@ namespace PierwszyProjekt
             Console.WriteLine(jakakoliwek);
             #endregion
             #region tablice
-            string[] cars = {"Volvo", "BMW", "Audi", "Toyota","Ferrai","Hyundai","Mazda"};
+            string[] cars = { "Volvo", "BMW", "Audi", "Toyota", "Ferrai", "Hyundai", "Mazda" };
             Console.WriteLine(cars[0]);
             int dlugosc = cars.Length;
             cars[6] = "Tesla";
@@ -261,7 +261,7 @@ namespace PierwszyProjekt
             #region Pętle
             string[] auta = { "Volvo", "BMW", "Audi", "Toyota", "Ferrai", "Hyundai", "Mazda" };
             int i = 0;
-            while(i < auta.Length) 
+            while (i < auta.Length)
             {
                 Console.WriteLine(auta[i]);
                 i++;
@@ -275,14 +275,14 @@ namespace PierwszyProjekt
                 Console.WriteLine($"hejka{dane}");
             } while (dane != "x");
 
-            for(int f = 0; f<auta.Length;f++)
+            for (int f = 0; f < auta.Length; f++)
             {
                 Console.WriteLine(auta[f]);
             }
 
-            foreach(string auto in auta)
+            foreach (string auto in auta)
             {
-                Console.WriteLine(auto+" ale furka wzzium");
+                Console.WriteLine(auto + " ale furka wzzium");
             }
             #endregion
             #region zadanie polegajace na przyjmowaniu danych od uzytkownika dopoki nie poda 0 oraz sumowanie podanych cyfr oraz znalezienie jak najwiekszej
@@ -293,7 +293,7 @@ namespace PierwszyProjekt
             int? naj = null;
             while (podanaLiczba != 0)
             {
-                if(naj== null || podanaLiczba > naj)
+                if (naj == null || podanaLiczba > naj)
                 {
                     naj = podanaLiczba;
                 }
@@ -310,7 +310,7 @@ namespace PierwszyProjekt
             string plec = Console.ReadLine();
 
             Gender userGender = (Gender)Enum.Parse(typeof(Gender), plec);//jest wysoko dobra wiec tak musimy sparsowac sobie string na enum i muismy wybrac typ enuma czyli u nas Gender po przecinku podajemy output uzytkownika ktory wpisal w konsole a pozniej w nawiasie jawnie rzutujemy na typ Enuma ktorym jest Gender
-            if(userGender == Gender.Female)
+            if (userGender == Gender.Female)
             {
                 Console.WriteLine("ty lepiej idz do kuchni a nie przy komputerze siedzisz");
             }
@@ -325,7 +325,7 @@ namespace PierwszyProjekt
             Console.WriteLine("Twoja Ulubiona Liczba to " + (FavouriteNoumber.HasValue ? FavouriteNoumber.Value.ToString() : ""));
             #endregion
             #region Try=Catch_finlly
-            string[] brum = { "Volvo", "BMW", "Audi", "Toyota","Ferrai","Hyundai","Mazda" };
+            string[] brum = { "Volvo", "BMW", "Audi", "Toyota", "Ferrai", "Hyundai", "Mazda" };
             try//tutaj kod sprobuje cos zrobic i jak cos bedzie nie tak czyli wyskoczy tak zwany wyjatek kod odrazu przejdzie do catch
             {
                 Console.WriteLine("try przed wyjatkiem");
@@ -336,7 +336,7 @@ namespace PierwszyProjekt
             {
                 Console.WriteLine("catch dla poza zakresem tablicy");
             }
-            catch(Exception e) // ogolnie to jak jest wyjatek to kod sprawdzi gdzie pasuje wyjatek w powyzszym catch mamy tylko out of range czyli jak ot bedzie out of range to wykona sie on a jak nie to ten bo ten jest ogolny dla kazdego wyjatku
+            catch (Exception e) // ogolnie to jak jest wyjatek to kod sprawdzi gdzie pasuje wyjatek w powyzszym catch mamy tylko out of range czyli jak ot bedzie out of range to wykona sie on a jak nie to ten bo ten jest ogolny dla kazdego wyjatku
             {
                 Console.WriteLine("catch dla jakiekolwiek wyjatku");
             }
@@ -366,12 +366,12 @@ namespace PierwszyProjekt
             */
             Regex regex = new Regex(@"^([a-z0-9]+)\.?([a-z0-9]+)@([a-z]+)\.[a-z]{2,3}$");
             string mail = "test.test@gmail.com";
-            bool  IsMatch = regex.IsMatch(mail);
+            bool IsMatch = regex.IsMatch(mail);
             Console.WriteLine(IsMatch);
             #endregion
             #region Nauka O Klasach
             Person Aleksander = new Person("Aleksander", "Szlosek");
-            Aleksander.SetDateOfBirth(new DateTime(2005,01,04));
+            Aleksander.SetDateOfBirth(new DateTime(2005, 01, 04));
             Aleksander.ContactNumber = "780094046";
             Aleksander.SayHi();
             Person Jacek = new Person(new DateTime(2005, 03, 01), "Jacek", "Keliwar");
@@ -390,14 +390,29 @@ namespace PierwszyProjekt
             excelFile.FileSize = 100;
             excelFile.CreatedOn = DateTime.Now;
             excelFile.GenerateRaport();
-            
+
             Class1 test = new Class1();//patrz prokelt ClassLibrary 
             test.publicprop = "hejka";
             #endregion
             #region Klasy Abstrakcyjne
             //File.cs
             #endregion
-            #region Klasy Interfejs
+            #region Klasy Interfejs 
+            //mozna sobie wyobrazic ze Interfejs to w 100% klasa abstrakcyjna czyli kazda funkcja kazda zmienna zawarta w interfejsie musi byc zawarta w klasach ktore ją dziedziczą
+            //roznice pomiedzy klasa abstrakcyja a interfejsem mozemy dziedziczyc tylko jedna klase bazowa a interfejsow mozemy implementowac wiele bo interfejsty implementujemy a nie dziedziczymy
+            //w interfejsie nie mozemy miec konstruktora w klasie mozemy ustawic public private protected internal abstratc a w interfejsie wszystko jest ustawione na abstract public
+
+            #endregion
+            #region Polimorfizm Lulu naziwaznie
+            Shape[] shapes = { new Circle(), new Rectangle(), new Triangle(), };
+
+            foreach (Shape shape in shapes)
+            {
+                shape.Draw();
+            }
+
+            #endregion
+            #region Kolekcje
 
             #endregion
         }

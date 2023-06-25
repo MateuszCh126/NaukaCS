@@ -13,3 +13,6 @@ C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\ob
 C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.pdb
 C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.genruntimeconfig.cache
 C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\ref\PierwszyProjekt.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\ClassLibrary.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\bin\Debug\net7.0\ClassLibrary.pdb
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\PierwszyProjekt\obj\Debug\net7.0\PierwszyProjekt.csproj.CopyComplete

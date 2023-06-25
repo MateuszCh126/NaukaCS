@@ -1,0 +1,6 @@
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\gamin\OneDrive\Pulpit\Programowanie\C#\FirstProject1\ClassLibrary\obj\Debug\ClassLibrary.pdb
