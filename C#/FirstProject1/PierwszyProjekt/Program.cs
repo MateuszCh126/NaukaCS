@@ -12,6 +12,34 @@ namespace PierwszyProjekt
 
     internal class Program
     {
+         static List<Person> GetEmployees()
+        {
+            List<Person> employees = new List<Person>()
+            {
+                new Person(new DateTime(1999,1,3),"jan","kowalski"),
+                new Person(new DateTime(2000,3,2),"Karol","Smith"),
+                new Person(new DateTime(1997,5,1),"Kuba","Klerowic"),
+                new Person(new DateTime(1994,9,3),"Andrzej","Gerbiskacz"),
+                new Person(new DateTime(1993,7,1),"Stefan","Sopolicki"),
+                new Person(new DateTime(1994,4,2),"Karol","Sopolski"),
+                new Person(new DateTime(1991,7,2),"Adam","Jenrak"),
+                new Person(new DateTime(1993,7,3),"Szymon","Redakan"),
+                new Person(new DateTime(1969,5,3),"Krystian","Robertly"),
+                new Person(new DateTime(1989,3,3),"Radek","Asembly"),
+                new Person(new DateTime(2004,2,3),"Bob","Leritnicki"),
+            };
+            return employees;
+         }
+         static void ShowList(List<int> list)
+        {
+            Console.WriteLine("******Lista******");
+            foreach (int element in list) 
+            {
+                Console.Write($"{element}");
+                Console.Write($",");
+            }
+            Console.WriteLine();
+        }
         /// <summary>
         /// Ale jazda nadaje opis dla main i jak na niego najedziesz to masz moj opis
         /// </summary>
@@ -413,7 +441,24 @@ namespace PierwszyProjekt
 
             #endregion
             #region Kolekcje
-
+            // kolekcje to Dictionary i Hashtable pary typu klucz wartosc | List tutaj ogolnie dynamiczny dostep dodawnie usuwanie sortowanie grupowanie elementow | Queue i Stack frist in last out i last in frist out 
+            List<int> list = new List<int>() { 7 , 1 ,20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20, 1, 20,1,3,2,4,5,88,4,234,32,123,52346,624,314234,53252,624234,6232,42,235,62,236,262,6263,232,62,623256,262,1,3343,256,24,5,632 };//<> zawiera typ ogolny (generyczny) moze byc nawet lista typow person {} mozemy dodwawac elementy listy juz przy deklaracji
+            list.Add(6);
+            //patrz nad funkcjie main
+            Console.Write("Dodaj element do Listy: ");
+            int elemencik = int.Parse(Console.ReadLine());
+            list.Add(elemencik);
+            ShowList(list);
+            //usuwanie z listy na 4 rozne sposoby
+            list.RemoveAt(0);//usuwa liczbe o danym indeksie
+            //list.RemoveAll(); usuwa wszystko z listy chyba ze damy mu okreslony warunek w nawiasy to usunie wszystkie elementy spelniajace dany warunek
+            list.Remove(1);//usuwa pierwszy napotkany element ktory podajemy w nawiasach w tym przypadku zniknie pierwsza jedynka
+            list.RemoveRange(0, 2);//pierwsza liczba w nawiasie okresla od ktorej pozycji a kolejna ile cyfr od tej pozycji
+            list.Sort();
+            ShowList(list);
+            #endregion
+            #region
+            List<Person> employees=  GetEmployees();
             #endregion
         }
     }
