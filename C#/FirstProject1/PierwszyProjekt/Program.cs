@@ -6,6 +6,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using MojeEnumy;//bo ten bo nowy namespace w osobnym folderze to trzeba zaimpoortowac ladnie
 using ClassLibrary;//importuje klase z innego projektu wazne zeby dodac inny projekt do zaleznosci
+using System.Linq;
+using System.Reflection.Metadata;
 
 namespace PierwszyProjekt
 {
@@ -457,8 +459,57 @@ namespace PierwszyProjekt
             list.Sort();
             ShowList(list);
             #endregion
-            #region
+            #region operacje na listach
             List<Person> employees=  GetEmployees();
+            /*List<Person> YoungEmployees = new List<Person>();
+            foreach (Person employee in employees)
+            {
+                if(employee.GetDateOfBirth() > new DateTime(2000,1,1))
+                {
+                    YoungEmployees.Add(employee);
+                }
+            }
+            Console.WriteLine($"liczba mlodych pracownikow: {YoungEmployees.Count}");
+            Person Bob = null;
+            foreach (Person youngemployee in YoungEmployees)
+            {
+                if(youngemployee.FristName == "Bob")
+                {
+                    Bob = youngemployee;
+                    break;
+                }
+            }
+            if (Bob != null)
+            {
+                Bob.SayHi();
+            }
+            else
+            {
+                Console.WriteLine("Bob not Found");
+            }*///ogolnie bez LINQ  tak to wyglada a tera z LINQ robimy
+            /*bool EmployeeIsYoung(Person employee)
+            {
+                return employee.GetDateOfBirth() > new DateTime(2000, 1, 1);
+            }
+            List<Person> Youngemployees = employees.Where(EmployeeIsYoung).ToList();
+            bool IsBob(Person employee)
+            {
+                return employee.FristName == "Bob";
+            }
+            Person Bob = Youngemployees.FirstOrDefault(IsBob);*///ogolem to tez mozna inaczej tera linq i lambda
+            List<Person> Youngemployees = employees.Where(e => e.GetDateOfBirth() > new DateTime(2000,1,1)).ToList();
+            Person Bob = Youngemployees.FirstOrDefault(e =>e.FristName == "Bob" );
+            if (Bob != null)
+            {
+                Bob.SayHi();
+            }
+            else
+            {
+                Console.WriteLine("Bob not Found");
+            }
+            #endregion
+            #region slownik ale mi sie nie chce wiec wroc do kursu zeby sie uzcyc o tej kolekcji bo ma  malo zastosowan
+                
             #endregion
         }
     }

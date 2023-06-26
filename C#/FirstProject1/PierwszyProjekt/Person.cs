@@ -13,13 +13,11 @@ namespace PierwszyProjekt
         {
             FristName = fristname;
             LastName = lastName;
-            Console.WriteLine("jakis szit kostruktor pierwszy");
             Count++;
         }
         public Person(DateTime dateOfBirth1, string fristname, string lastName) : this(fristname, lastName)
         {
             SetDateOfBirth(dateOfBirth1);
-            Console.WriteLine("drugi szit");
         }
 
         public string FristName;
